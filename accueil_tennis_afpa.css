@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background: url('images/bg.jpg') no-repeat center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  font-family: Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+
+
+.item1 { grid-area: header;
+  margin: 0 auto 20px auto;
+  padding: 0px; 
+  background-color: rgba(105, 105, 105, 0.7);
+  color: white;
+  border: 2px solid #130E0A;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.3); 
+  box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.3);}
+.item1 a:hover {
+  text-shadow: 2px 2px 3px black;
+  transition-duration: 0.3s;}
+.item2 { grid-area: b1;}
+.item3 { grid-area: b2;}
+.item4 { grid-area: b3;}
+.item5 { grid-area: b4;}
+.item6 { grid-area: b5;}
+.item7 { grid-area: b6;}
+.corps {grid-area: corps;
+  padding: 1.2rem;
+  margin-bottom: 1.3rem;
+  background-color: rgba(251, 251, 251, 0.8);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.3); 
+  box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.3);
+  display: grid;
+  grid-gap: 0;
+grid-template-areas:
+    'b1 b2 b3''b4 b5 b6';}
+.item8 { grid-area: footer;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    '. header header header header header .'
+    '. corps corps corps corps corps .'
+    '. footer footer footer footer footer .';
+  grid-gap: 0;
+ }
+ .item2 img, .item3 img, .item4 img, .item5 img, .item6 img, .item7 img {
+  border: 1px solid #393939;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.3); 
+  box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.3);
+  margin: 8px;
+}
+
+ .item2:hover, .item3:hover, .item4:hover, .item5:hover, .item6:hover, .item7:hover {
+  transition-duration: 0.5s;
+  background-color: rgba(10, 10, 10, 0.2);
+  text-shadow: 1px 1px 3px #000000;
+  color: white;
+}
+
+.item1 img {vertical-align: middle; padding: 0.45rem;}
+li {
+  display: inline-block;
+  list-style-type: none;}
+
+li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1.2rem;
+  border-left: 1px solid grey;
+}
+li#afpatennis {
+  margin: 0 0.6rem;}
+
+@media screen and (max-width: 600px)
+{
+  .item1 { width: 100%; }
+  li#afpatennis {margin: 0;}
+	li {display: block; padding:20px 0; border-bottom: 1px solid grey;}
+  li:last-child, #logo{border-bottom: none;}
+	.grid-container {
+	  grid-template-areas:
+    'header'
+    'corps'
+    'footer';
+ 	}
+  .corps {
+    grid-template-areas:
+    'b1' 'b2' 'b3' 'b4' 'b5' 'b6';
+  }
+}

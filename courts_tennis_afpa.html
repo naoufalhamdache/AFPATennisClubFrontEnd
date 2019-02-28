@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Site AFPA Tennis Club - Enregistrement des courts">
+    <meta name="keywords" content="AFPA, Istres, Tennis, Tenis, Teniss, Tennise, Club, 2018, Save, Enregistrement, Naoufal, HAMDACHE, Site, Website, Joueurs, Joueur, Players, Player, Courts, Court, Matchs, Match, Arbitres, Arbitre, Resultats, Resultat, Balle, Raquette, Projet, Project, Competition, Game, Sport, Set">
+    <meta name="author" content="AFPA Istres Naoufal HAMDACHE">
+    <meta name="google-site-verification" content="vkhTYXwQC5mGwenDZR4bJyeDOqrnVv8xdATxKXObUeY" />
+	<title>Courts AFPA TENNIS CLUB</title>
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="design_afpa_tennis.css" />
+</head>
+
+<body>
+
+	<header>
+		<ul class="item1">
+		  	<li id="logo"><img src="images/logo.png" alt="logo tennis club AFPA" height=70 width=70 /></li>
+		  	<li id="afpatennis">AFPA TENNIS CLUB</li>
+			<li class="boutton"><a href="accueil_tennis_afpa.html">Accueil</a> </li>
+			<li class="boutton"><a href="accueil_tennis_afpa.html">Articles</a> </li>
+			<li class="boutton"><a href="accueil_tennis_afpa.html">Contact</a> </li>
+	  </ul>
+	</header>
+	
+	<main>
+		<section>
+			<h1> Enregistrer des courts </h1>
+			<p> Enregistrer un nouveau court en indiquant son nom. </p>
+			<form id="form1">
+				<label>Nom</label>
+				<input class="saisie" type="text" autocomplete="off" id="username1" placeholder="Nom du court" required />
+				<br><br>
+				<input type="button" value="Enregistrer le court" onclick="savecourt()">
+			</form>
+		</section>
+		<aside id="liste">
+			<p id=titreliste>Liste des courts</p>
+		</aside>
+	</main>
+	
+
+	
+	<footer>
+		<p>&copy; AFPA Tennis Club</p>
+		<address>
+			<a href="mailto:contact@afpatennisclub.fr">Contact us</a>
+		</address>
+	</footer>
+	
+	<script src="courts_tennis_afpa.js"></script>
+</body>
+
+</html>

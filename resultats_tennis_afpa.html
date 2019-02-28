@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Site AFPA Tennis Club - Enregistrement des resultats - Results">
+    <meta name="keywords" content="AFPA, Istres, Tennis, Tenis, Teniss, Tennise, Club, 2018, Save, Enregistrement, Naoufal, HAMDACHE, Site, Website, Joueurs, Joueur, Players, Player, Courts, Court, Matchs, Match, Arbitres, Arbitre, Resultats, Resultat, Balle, Raquette, Projet, Project, Competition, Game, Sport, Winner, Win, Loser, Lose">
+    <meta name="author" content="AFPA Istres Naoufal HAMDACHE">
+    <meta name="google-site-verification" content="vkhTYXwQC5mGwenDZR4bJyeDOqrnVv8xdATxKXObUeY" />
+	<title>Resultats AFPA TENNIS CLUB</title>
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="design_afpa_tennis.css" />
+</head>
+
+<body>
+
+	<header>
+		<ul class="item1">
+		  	<li id="logo"><img src="images/logo.png" alt="logo tennis club AFPA" height=70 width=70 /></li>
+		  	<li id="afpatennis">AFPA TENNIS CLUB</li>
+			<li class="boutton"><a href="accueil_tennis_afpa.html">Accueil</a> </li>
+			<li class="boutton"><a href="accueil_tennis_afpa.html">Articles</a> </li>
+			<li class="boutton"><a href="accueil_tennis_afpa.html">Contact</a> </li>
+	  </ul>
+	</header>
+	
+	<main>
+		<section>
+			<h1> Enregistrer des resultats de matchs </h1>
+			<p> Renseignez pour chaque joueur le score obtenu. </p>
+			<form id="form1">
+				<label>Joueur 1</label>
+				<select id="joueur1">
+					<option value="none" selected="selected"> Sélectionnez </option>
+					<option> Bertrand Jarid </option>
+					<option> Sebastien Planir </option>
+					<option> Thomas Tyral </option>
+				</select>
+				<br><br>
+				<label>Score du Joueur 1</label>
+				<input type="text" class="saisie" id="score1" />
+				<br><br>
+				<label>Joueur 2</label>
+				<select id="joueur2">
+					<option value="none" selected="selected"> Sélectionnez </option>
+					<option> Georges Telsi </option>
+					<option> John Sirtal </option>
+					<option> Malik Terali </option>
+				</select>
+				<br><br>
+				<label>Score du Joueur 2</label>
+				<input type="text" class="saisie" id="score2" />
+				<br><br>
+				<input type="button" value="Enregistrer le match" onclick="savescore()">
+			</form>
+		</section>
+		<aside id="liste">
+			<p id=titreliste>Scores</p>
+		</aside>
+	</main>
+	
+
+	
+	<footer>
+		<p>&copy; AFPA Tennis Club</p>
+		<address>
+			<a href="mailto:contact@afpatennisclub.fr">Contact us</a>
+		</address>
+	</footer>
+	
+	<script src="resultats_tennis_afpa.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Site AFPA Tennis Club - Page de connexion">
+    <meta name="keywords" content="AFPA, Istres, Tennis, Tenis, Teniss, Tennise, Club, 2018, Connexion, Naoufal, HAMDACHE, Site, Website, Joueurs, Joueur, Players, Player, Courts, Court, Matchs, Match, Arbitres, Arbitre, Resultats, Resultat, Balle, Raquette, Projet, Project, Competition, Game, Sport">
+    <meta name="author" content="AFPA Istres Naoufal HAMDACHE">
+    <meta name="google-site-verification" content="vkhTYXwQC5mGwenDZR4bJyeDOqrnVv8xdATxKXObUeY" />
+	<title>AFPA TENNIS CLUB</title>
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="connexion_tennis_afpa.js"></script>
+	<link type="text/css" rel="stylesheet" href="connexion_tennis_afpa.css" />
+</head>
+
+<body>
+
+	<main>
+		<article id="art1">
+			<h1> Connexion </h1>
+			<form id="formC" method="post" name="formC" action="accueil_tennis_afpa.html" onsubmit="return validate()">
+				<input class="saisie" type="text" id="username" name="username" placeholder="Votre nom" autocomplete="off" required />
+				<br>
+				<input class="saisie" type="password" id="password" name="password" placeholder="Votre mot de passe" required />
+				<br>
+				<input type="checkbox" id="souvenir" name="souvenir">
+				Se souvenir de moi
+				<br>
+				<input class="bouton" type="submit" value="Se connecter">
+				<input class="bouton" type="reset" value="Réinitialiser">
+			</form>
+		</article>
+	</main>
+
+	<footer>
+		<p>&copy; AFPA Tennis Club</p>
+		<address>
+			<a href="mailto:contact@afpatennisclub.fr">Contact us</a>
+		</address>
+	</footer>
+	
+</body>
+
+</html>

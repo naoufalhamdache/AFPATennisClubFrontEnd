@@ -1,0 +1,51 @@
+body {
+	background: url('images/bg.jpg') no-repeat center fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#art1 {
+	display: block;
+	margin: 100px auto 50px auto;
+	max-width: 500px;
+	min-width: 200px;
+	max-height: 200px;
+	padding: 30px 30px 100px 30px;
+	background-color: rgba(251, 251, 251, 0.8);
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.3); 
+	box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.3);
+}
+
+input {
+	margin: 10px 0 10px 2%;
+}
+
+.bouton {
+	height: 35px;
+	width: 100px;
+	text-decoration: none;
+	border: none;
+	color: white;
+	background-image: linear-gradient(to left, #77ab59, #77ab59);
+	background-color: #77ab59;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-webkit-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.3); 
+	box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.3);
+}
+
+.saisie {
+	height: 25px;
+	width: 95%;
+}
+
+footer {
+	text-align: center;
+}
+
+footer address {
+	line-height: 0px;
+}
